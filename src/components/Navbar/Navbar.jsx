@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Navbar.scss';
-import { images } from '../../constants';
 import { HiMenuAlt4, HiX} from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
@@ -10,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+        <h1>Portfolio</h1>
       </div>
 
       <ul className="app__navbar-links">

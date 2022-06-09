@@ -20,9 +20,14 @@
     justify-content: flex-start;
     align-items: center;
 
-    img{
-        width: 90px;
-        height: 20px;
+    h1{
+        // width: 90px;
+        // height: 30px;
+        width: 72px;
+        line-height: 1;
+        font-size: 1.5rem;
+        color: var(--secondary-color);
+        letter-spacing: -3px;
 
         @media screen and (min-width: 2000px) {
             width: 180px;

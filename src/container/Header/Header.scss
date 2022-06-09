@@ -57,7 +57,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    margin-bottom: 4rem;
+    padding: 0 0 4rem;
 
     .badge-cmp, .tag-cmp{
         padding: 1rem 2rem;
@@ -169,6 +169,6 @@
         flex: 0.75;
         flex-wrap: wrap;
         flex-direction: row;
-        margin-top: 4rem;
+        padding: 4rem 0;
     }
 }

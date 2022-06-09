@@ -2,6 +2,7 @@ import React from 'react';
 import './About.scss';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
+import { AppWrap } from '../../wrapper';
 
 const abouts = [
   { title: 'Frontend Developer', description: 'An excellent frontend developer.', imgUrl: images.about01},
@@ -33,4 +34,4 @@ const About = () => {
   );
 }
 
-export default About;
+export default AppWrap(About, "about");

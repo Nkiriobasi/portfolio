@@ -34,6 +34,7 @@ import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
 import netflix from '../assets/netflix.png';
+import foodRecipe from '../assets/foodRecipe.png';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -68,5 +69,6 @@ export default {
   nb,
   skype,
   spotify,
-  netflix
+  netflix,
+  foodRecipe
 };

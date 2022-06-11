@@ -1,7 +1,6 @@
 import React from 'react';
 import { AiFillEye, AiFillGithub} from 'react-icons/ai';
 import './Work.scss';
-import { motion } from 'framer-motion';
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 
@@ -13,11 +12,11 @@ const projects = [
     imageUrl: images.netflix,
     tag: "JAVASCRIPT"
   },
-  { title: 'Netflix clone', 
-    description: 'Built a netflix clone website', 
-    projectLink: "https://netflixcloneee.netlify.app/", 
-    codeLink: "https://github.com/Nkiriobasi/netflix-clone", 
-    imageUrl: images.netflix,
+  { title: 'Food Recipe App', 
+    description: 'Built a food recipe app', 
+    projectLink: "https://food-recipe-app22.netlify.app/", 
+    codeLink: "https://github.com/Nkiriobasi/food-recipe-app-with-javascript", 
+    imageUrl: images.foodRecipe,
     tag: "JAVASCRIPT"
   },
   { title: 'Netflix clone', 
@@ -52,12 +51,8 @@ const Work = () => {
               <p className="p-text" style={{ marginTop: 10 }}>{proj.description}</p>
 
               <div className="btn__wrapper">
-                <span className="btn">
-                  <a href={proj.projectLink} target="_blank" rel="noreferrer" className="btn-link"><AiFillEye /></a>
-                </span>
-                <span className="btn">
-                  <a href={proj.codeLink} target="_blank" rel="noreferrer" className="btn-link"><AiFillGithub /></a>
-                </span>
+                <a href={proj.projectLink} target="_blank" rel="noreferrer" className="btn-link"><AiFillEye /></a>
+                <a href={proj.codeLink} target="_blank" rel="noreferrer" className="btn-link"><AiFillGithub /></a>
               </div>
 
               <div className="app__work-tag app__flex">
@@ -73,30 +68,3 @@ const Work = () => {
 
 export default AppWrap(Work, 'work');
 
-
-{/* <motion.div
-                whileHover={{opacity: [0, 1]}}
-                transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
-                className="app__work-hover app__flex"
-              >
-                <a href={proj.projectLink} target="_blank" rel="noreferrer">
-                  <motion.div
-                    whileInView={{scale: [0, 1]}}
-                    whileHover={{opacity: [1, 0.9]}}
-                    transition={{duration: 0.25}}
-                    className="app__flex"
-                  >
-                    <AiFillEye />
-                  </motion.div>
-                </a>
-                <a href={proj.codeLink} target="_blank" rel="noreferrer">
-                  <motion.div
-                    whileInView={{scale: [0, 1]}}
-                    whileHover={{opacity: [1, 0.9]}}
-                    transition={{duration: 0.25}}
-                    className="app__flex"
-                  >
-                    <AiFillGithub />
-                  </motion.div>
-                </a>
-              </motion.div> */}

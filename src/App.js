@@ -10,7 +10,6 @@ function App() {
       <About />
       <Work />
       <Skills />
-
       <Footer />
     </main>
   );

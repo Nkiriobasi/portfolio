@@ -6,24 +6,24 @@ import { images } from '../../constants';
 
 const projects = [
   { title: 'Netflix clone', 
-    description: 'Built a netflix clone website', 
+    description: 'This is a web app, built with vanilla js, showing some functionalities of the netflix web app.', 
+    projectLink: "https://netflixcloneee.netlify.app/", 
+    codeLink: "https://github.com/Nkiriobasi/netflix-clone", 
+    imageUrl: images.netflix,
+    tag: "JAVASCRIPT"
+  },
+  { title: 'Netflix clone', 
+    description: 'This is a web app, built with vanilla js, showing some functionalities of the netflix web app.', 
     projectLink: "https://netflixcloneee.netlify.app/", 
     codeLink: "https://github.com/Nkiriobasi/netflix-clone", 
     imageUrl: images.netflix,
     tag: "JAVASCRIPT"
   },
   { title: 'Food Recipe App', 
-    description: 'Built a food recipe app', 
+    description: 'Built a food recipe app with vanilla js, showing how to fetch data from an external api.', 
     projectLink: "https://food-recipe-app22.netlify.app/", 
     codeLink: "https://github.com/Nkiriobasi/food-recipe-app-with-javascript", 
     imageUrl: images.foodRecipe,
-    tag: "JAVASCRIPT"
-  },
-  { title: 'Netflix clone', 
-    description: 'Built a netflix clone website', 
-    projectLink: "https://netflixcloneee.netlify.app/", 
-    codeLink: "https://github.com/Nkiriobasi/netflix-clone", 
-    imageUrl: images.netflix,
     tag: "JAVASCRIPT"
   }
 ];

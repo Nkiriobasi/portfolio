@@ -100,4 +100,18 @@
 .app__skills-exp-work{
     display: flex;
     flex-direction: column;
+
+    h4{
+        font-weight: 500;
+    }
+
+    p{
+        font-weight: 400;
+        color: var(--gray-color);
+    }
+
+    p:first-child{
+        font-weight: 800;
+        color: var(--secondary-color);
+    }
 }

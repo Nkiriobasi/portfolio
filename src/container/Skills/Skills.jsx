@@ -3,7 +3,7 @@ import './Skills.scss';
 import { motion } from 'framer-motion';
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
-import ReactTooltip from 'react-tooltip';
+
 
 const skills = [
   {
@@ -85,21 +85,12 @@ const Skills = () => {
                 whileInView={{opacity: [0, 1]}}
                 transition={{duration: 0.5}}
                 className="app__skills-exp-work"
-                data-tip
-                data-for={exp.name}
               >
                 <p className="p-text">{exp.year}</p>
-                <h4 className="bold-text">{exp.name}</h4>
                 <p className="p-text">{exp.company}</p>
+                <h4 className="bold-text">{exp.name}</h4>
+                <p className="p-text">{exp.desc}</p>
               </motion.div>
-              <ReactTooltip
-                id={exp.name}
-                effect="solid"
-                arrowColor="#fff"
-                className="skills-tooltip"
-              >
-                {exp.desc}
-              </ReactTooltip>
             </section>
           ))}
         </motion.div>

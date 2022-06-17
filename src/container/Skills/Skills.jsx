@@ -37,6 +37,10 @@ const skills = [
   {
     name: "Next",
     imageUrl: images.nextjs
+  },
+  {
+    name: "Redux",
+    imageUrl: images.redux
   }
 ]
 

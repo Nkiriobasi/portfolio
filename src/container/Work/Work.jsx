@@ -20,7 +20,7 @@ const projects = [
     tag: "JAVASCRIPT"
   },
   { title: 'Food Recipe App', 
-    description: 'Built a food recipe app with vanilla js, showing how to fetch data from an external api.', 
+    description: 'Built a food recipe app with vanilla js, showing how to fetch data from an external api to your website.', 
     projectLink: "https://food-recipe-app22.netlify.app/", 
     codeLink: "https://github.com/Nkiriobasi/food-recipe-app-with-javascript", 
     imageUrl: images.foodRecipe,
@@ -51,8 +51,8 @@ const Work = () => {
               <p className="p-text" style={{ marginTop: 10 }}>{proj.description}</p>
 
               <div className="btn__wrapper">
-                <a href={proj.projectLink} target="_blank" rel="noreferrer" className="btn-link"><AiFillEye /></a>
-                <a href={proj.codeLink} target="_blank" rel="noreferrer" className="btn-link"><AiFillGithub /></a>
+                <a href={proj.projectLink} target="_blank" rel="noreferrer" className="btn-link"><AiFillEye className="btn-icon" /></a>
+                <a href={proj.codeLink} target="_blank" rel="noreferrer" className="btn-link"><AiFillGithub className="btn-icon" /></a>
               </div>
 
               <div className="app__work-tag app__flex">

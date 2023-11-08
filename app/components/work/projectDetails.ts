@@ -25,7 +25,7 @@ export const projects = [
         id: 0,
         name: "Portfolio 2023",
         description:
-            "This is my portfolio, showcasing my capabilities",
+            "This is my portfolio, showcasing my capabilities.",
         technologies: [SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiFramer],
         techNames: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Framer Motion"],
         techLinks: ["https://www.typescriptlang.org/", "https://reactjs.org/", "https://nextjs.org/", "https://tailwindcss.com/", "https://www.framer.com/motion/"],
@@ -35,7 +35,7 @@ export const projects = [
         available: true,
     },
     {
-        id: 2,
+        id: 1,
         name: "Coming Soon",
         description:
             "I'm currently working on a couple of projects. I'll update this section as soon as I'm done.",

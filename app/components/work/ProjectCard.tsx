@@ -22,7 +22,7 @@ const ProjectCard = ({
 }: ProjectProps) => {
     return (
         <motion.div
-            className={`relative bg-cover bg-no-repeat bg-center z-10 h-[550px] w-full items-stretch justify-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
+            className={`relative bg-cover bg-no-repeat bg-center z-10 h-[620px] w-full items-stretch justify-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
             initial="initial"
             animate="animate"
         >
@@ -50,7 +50,7 @@ const ProjectCard = ({
                 <div
                     className={`absolute top-0 text-[#0E1016] ${
                         id % 2 === 0 ? "left-0 ml-8 lg:ml-14" : "right-0 mr-8 lg:mr-14"
-                    } mt-6 flex  items-center justify-center gap-4 lg:mt-10`}
+                    } mt-6 flex items-center justify-center gap-4 lg:mt-10`}
                 >
                     {available ? (
                         <>
@@ -58,7 +58,7 @@ const ProjectCard = ({
                                 href={github}
                                 target="_blank"
                                 aria-label="Open GitHub Repository"
-                                className="rounded-full w-[20px] bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
+                                className="rounded-full bg-white flex items-center justify-center text-[24px] md:text-[28px] md:w-[65px] w-[45px] md:h-[65px] h-[45px]"
                                 data-blobity
                                 data-blobity-radius="35"
                                 data-blobity-offset-x="4"
@@ -70,7 +70,7 @@ const ProjectCard = ({
                                 href={demo}
                                 target="_blank"
                                 aria-label="Open Live Demo"
-                                className=" w-[20px] rounded-full bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
+                                className="rounded-full bg-white flex items-center justify-center text-[24px] md:text-[28px] md:w-[65px] w-[45px] md:h-[65px] h-[45px]"
                                 data-blobity
                                 data-blobity-radius="35"
                                 data-blobity-offset-x="4"

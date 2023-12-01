@@ -10,7 +10,7 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-    title: "Frontend Engineer (Web | Mobile)",
+    title: "Frontend Engineer",
     generator: "Next.js",
     colorScheme: "dark",
     robots: {

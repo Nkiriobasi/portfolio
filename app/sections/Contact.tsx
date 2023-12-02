@@ -11,7 +11,7 @@ import React from "react";
 const Contact = () => {
     return (
         <motion.section
-            className="relative z-10 flex h-[85vh] w-full items-center justify-center overflow-hidden py-16 md:h-[80vh] md:py-20 lg:h-[90vh] lg:pt-0 lg:pb-28"
+            className="relative z-10 flex h-[95vh] w-full items-center justify-center overflow-hidden py-16 md:h-[80vh] md:py-20 lg:h-[90vh] lg:pt-0 lg:pb-28"
             id="contact"
             initial="initial"
             animate="animate"
@@ -29,7 +29,7 @@ const Contact = () => {
                     />
                 </div>
 
-                <div className="mt-20 flex w-full flex-col items-end justify-center gap-16 sm:mt-32 sm:gap-12 md:mt-40 md:flex-row md:items-start md:justify-between lg:mt-12 lg:max-w-[1440px]">
+                <div className="mt-14 md:mt-24 flex w-full flex-col items-end justify-center gap-10 md:gap-16 sm:mt-32 sm:gap-12 md:flex-row md:items-start md:justify-between lg:mt-12 lg:max-w-[1440px]">
                     <div className=" flex w-[350px] max-w-[90%] flex-col items-end text-right text-[14px] font-semibold uppercase text-[#e4ded7] sm:w-[350px] sm:text-[14px] md:w-[310px] md:items-start md:text-left md:text-[16px] lg:w-[420px] lg:text-[16px]">
                         <AnimatedBody
                             text={
@@ -49,7 +49,7 @@ const Contact = () => {
                         </Link>
                     </div>
 
-                    <div className="flex gap-10 text-[16px] font-bold text-[#e4ded7]  sm:gap-14 sm:text-[24px] md:gap-10 md:text-[16px] lg:gap-20 lg:text-[28px]">
+                    <div className="flex gap-10 text-[16px] font-bold text-[#e4ded7] sm:gap-14 sm:text-[24px] md:gap-10 md:text-[16px] lg:gap-20 lg:text-[28px]">
                         <Link
                             href="https://github.com/Nkiriobasi"
                             target="_blank"

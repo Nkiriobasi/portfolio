@@ -12,6 +12,7 @@ type CustomCSSProperties = React.CSSProperties & {
     "--border-radius"?: string | number;
     "--top"?: string | number;
     "--left"?: string | number;
+    "--right"?: string | number;
     "--is-hovered"?: number;
     "--cursor-x"?: string;
     "--cursor-y"?: string;
@@ -26,6 +27,7 @@ type ContainerProps = {
     // position
     top?: string | number;
     left?: string | number;
+    right?: string | number;
     // colors
     color: string;
     // accent
@@ -59,6 +61,7 @@ const Container: React.FC<ContainerProps> = ({
     height,
     top = 0,
     left = 0,
+    right = 0,
     color,
     spotlightColor = "rgba(255, 255, 255, 0.25)", // #ffffff just a bit of white
     accentColor = "rgba(255, 255, 255, 1.0)", // #c673ff Amethyst
@@ -105,6 +108,7 @@ const Container: React.FC<ContainerProps> = ({
                 "--border-radius": `${borderRadius}px`,
                 "--top": `${top}px`,
                 "--left": `${left}px`,
+                "--right": `${right}px`,
                 "--is-hovered": isHovered ? 0.5 : 0, // TODO: Clean this up later. Not Important right now.
                 "--cursor-x": `${cursorPosition.x}px`,
                 "--cursor-y": `${cursorPosition.y}px`,

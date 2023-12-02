@@ -36,6 +36,19 @@ export const projects = [
     },
     {
         id: 1,
+        name: "Portfolio 2023",
+        description:
+            "This is my portfolio, showcasing my capabilities.",
+        technologies: [SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiFramer],
+        techNames: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Framer Motion"],
+        techLinks: ["https://www.typescriptlang.org/", "https://reactjs.org/", "https://nextjs.org/", "https://tailwindcss.com/", "https://www.framer.com/motion/"],
+        github: "https://github.com/Nkiriobasi/portfolio",
+        demo: "https://nkiriobasi.vercel.app/",
+        image: "/projects/portfolio.webp",
+        available: true,
+    },
+    {
+        id: 2,
         name: "Coming Soon",
         description:
             "I'm currently working on a couple of projects. I'll update this section as soon as I'm done.",

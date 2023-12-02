@@ -22,7 +22,9 @@ const ProjectCard = ({
 }: ProjectProps) => {
     return (
         <motion.div
-            className={`relative bg-cover bg-no-repeat bg-center z-10 h-[620px] w-full items-stretch justify-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
+            className={`relative bg-cover bg-no-repeat bg-center z-10 h-[380px] 
+                w-full items-stretch justify-center py-0 sm:h-[430px] lg:h-[500px]`
+            }
             initial="initial"
             animate="animate"
         >
@@ -33,8 +35,9 @@ const ProjectCard = ({
                 color="rgba(255, 255, 255, 0.1)"
                 blur={false}
                 grain={true}
-                top="0px"
-                left="0px"
+                top="0"
+                left="0"
+                right="0"
                 angle={0}
             >
                 <Image
@@ -42,15 +45,13 @@ const ProjectCard = ({
                     alt={name}
                     width={500}
                     height={500}
-                    className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
-                        id % 2 === 0 ? "right-0" : "left-0"
-                    }`}
+                    className={`lg:block hidden absolute bottom-0 w-[55%] right-0`}
                     priority={true}
                 />
                 <div
-                    className={`absolute top-0 text-[#0E1016] ${
-                        id % 2 === 0 ? "left-0 ml-8 lg:ml-14" : "right-0 mr-8 lg:mr-14"
-                    } mt-6 flex items-center justify-center gap-4 lg:mt-10`}
+                    className={`absolute top-0 text-[#0E1016] left-0 ml-5 sm:ml-10 lg:ml-14
+                        mt-6 flex items-center justify-center gap-4 lg:mt-10`
+                    }
                 >
                     {available ? (
                         <>
@@ -58,7 +59,9 @@ const ProjectCard = ({
                                 href={github}
                                 target="_blank"
                                 aria-label="Open GitHub Repository"
-                                className="rounded-full bg-white flex items-center justify-center text-[24px] md:text-[28px] md:w-[65px] w-[45px] md:h-[65px] h-[45px]"
+                                className={`rounded-full bg-white flex items-center justify-center text-[24px] 
+                                    md:text-[28px] md:w-[65px] w-[45px] md:h-[65px] h-[45px]`
+                                }
                                 data-blobity
                                 data-blobity-radius="35"
                                 data-blobity-offset-x="4"
@@ -70,7 +73,9 @@ const ProjectCard = ({
                                 href={demo}
                                 target="_blank"
                                 aria-label="Open Live Demo"
-                                className="rounded-full bg-white flex items-center justify-center text-[24px] md:text-[28px] md:w-[65px] w-[45px] md:h-[65px] h-[45px]"
+                                className={`rounded-full bg-white flex items-center justify-center text-[24px] 
+                                    md:text-[28px] md:w-[65px] w-[45px] md:h-[65px] h-[45px]`
+                                }
                                 data-blobity
                                 data-blobity-radius="35"
                                 data-blobity-offset-x="4"
@@ -80,20 +85,18 @@ const ProjectCard = ({
                             </Link>
                         </>
                     ) : (
-                        <div></div>
+                        <></>
                     )}
                 </div>
                 <div
-                    className={`absolute text-white  ${
-                        !(id % 2 === 0)
-                            ? "right-0 top-32 mr-0 ml-10 md:right-0 md:ml-0 lg:right-0 lg:top-60  lg:mr-4"
-                            : "left-10 top-32 ml-0 md:mr-12 lg:top-52 lg:ml-4"
-                    } mb-10  md:mb-16 lg:mb-14 `}
+                    className={`absolute text-white left-5 sm:left-10 top-32 ml-0 
+                        lg:mr-12 lg:top-52 lg:ml-4 mb-0 lg:mb-14`
+                    }
                 >
                     <AnimatedTitle
                         text={name}
-                        className={
-                            "max-w-[90%] text-[40px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[48px] lg:leading-none"
+                        className={`max-w-[90%] text-[24px] sm:text-[40px] leading-none text-white 
+                            md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[48px] lg:leading-none`
                         }
                         wordSpace={"mr-[0.25em]"}
                         charSpace={"-mr-[0.01em]"}

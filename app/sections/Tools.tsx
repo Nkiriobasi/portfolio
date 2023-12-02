@@ -16,7 +16,7 @@ import AnimatedTools from "../animations/AnimatedTools.tsx";
 const Tools = () => {
     return (
         <section
-            className="relative z-10 w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 pb-36 md:pt-20 md:pb-44 lg:pt-20 lg:pb-56"
+            className="relative z-10 w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 pb-[80px] sm:pb-36 md:pt-20 md:pb-44 lg:pt-20 lg:pb-56"
             id="tools"
         >
             <div className="mx-auto flex w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
@@ -32,52 +32,52 @@ const Tools = () => {
                 <div className="mx-auto w-[100%] lg:max-w-[1200px] justify-center">
                     <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-bold leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[40px] md:leading-relaxed lg:mb-16 lg:w-[50%]">
                         <AnimatedBody delay={0.1} text="Design" />
-                        <div>
-                            <AnimatedTools className="grid grid-cols-5 gap-4" delay={0.1} stepSize={0.1} iconSize={50}>
-                                <SiAdobephotoshop size={50}/>
-                                <SiAdobeaftereffects size={50}/>
-                                <SiFigma size={50}/>
-                                <SiAdobeillustrator size={50}/>
-                                <SiGooglefonts size={50}/>
+                        <>
+                            <AnimatedTools className="grid grid-cols-5 gap-x-4 gap-y-4 sm:gap-y-8" delay={0.1} stepSize={0.1} iconSize={50}>
+                                <SiAdobephotoshop className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <SiAdobeaftereffects className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <SiFigma className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <SiAdobeillustrator className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <SiGooglefonts className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
                             </AnimatedTools>
-                        </div>
+                        </>
                     </div>
                     <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-bold leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[40px] md:leading-relaxed lg:mb-16 lg:w-[50%]">
                         <AnimatedBody delay={0.2} text="Frontend" />
-                        <div>
-                            <AnimatedTools className="grid grid-cols-5 gap-4" delay={0.2} stepSize={0.1} iconSize={50}>
-                                <SiTypescript size={50}/>
-                                <SiJavascript size={50}/>
-                                <SiReact size={50}/>
-                                <SiRedux size={50}/>
-                                <SiNextdotjs size={50}/>
-                                <SiTailwindcss size={50}/>
+                        <>
+                            <AnimatedTools className="grid grid-cols-5 gap-x-4 gap-y-4 sm:gap-y-8" delay={0.2} stepSize={0.1} iconSize={50}>
+                                <SiJavascript className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <SiTailwindcss className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <SiReact className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <SiRedux className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <SiNextdotjs className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <SiTypescript className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
                             </AnimatedTools>
-                        </div>
+                        </>
                     </div>
                     <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-bold leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[40px] md:leading-relaxed lg:mb-16 lg:w-[50%]">
                         <AnimatedBody delay={0.3} text="Backend" />
-                        <div>
-                            <AnimatedTools className="grid grid-cols-5 gap-4" delay={0.3} stepSize={0.1} iconSize={50}>
-                                <SiNodedotjs size={50}/>
-                                <SiExpress size={50}/>
-                                <SiPostgresql size={50}/>
-                                <SiFirebase size={50}/>
-                                <SiMongodb size={50}/>
+                        <>
+                            <AnimatedTools className="grid grid-cols-5 gap-x-4 gap-y-4 sm:gap-y-8" delay={0.3} stepSize={0.1} iconSize={50}>
+                                <SiNodedotjs className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <SiExpress className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <SiPostgresql className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <SiFirebase className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <SiMongodb className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
                             </AnimatedTools>
-                        </div>
+                        </>
                     </div>
                     <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-bold leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[40px] md:leading-relaxed lg:mb-16 lg:w-[50%]">
                         <AnimatedBody delay={0.4} text="Other" />
-                        <div>
-                            <AnimatedTools className="grid grid-cols-5 gap-4" delay={0.4} stepSize={0.1} iconSize={50}>
-                                <SiGithub size={50}/>
-                                <SiGit size={50}/>
-                                <TbBrandVscode size={50}/>
-                                <SiGooglechrome size={50}/>
-                                <SiNpm size={50}/>
+                        <>
+                            <AnimatedTools className="grid grid-cols-5 gap-x-4 gap-y-4 sm:gap-y-8" delay={0.4} stepSize={0.1} iconSize={50}>
+                                <SiGithub className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <SiGit className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <TbBrandVscode className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <SiGooglechrome className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
+                                <SiNpm className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
                             </AnimatedTools>
-                        </div>
+                        </>
                     </div>
                 </div>
 

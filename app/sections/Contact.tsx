@@ -17,7 +17,7 @@ const Contact = () => {
             animate="animate"
         >
             <ContactBackground />
-            <div className="mx-auto  flex w-[90%] flex-col items-center justify-center pt-10 md:pt-0">
+            <div className="mx-auto flex w-[90%] flex-col items-center justify-center pt-10 md:pt-0">
                 <div
                     className={`flex flex-col items-start justify-center ${spaceGrotesk.className} relative w-full sm:items-center lg:max-w-[1440px] `}
                 >

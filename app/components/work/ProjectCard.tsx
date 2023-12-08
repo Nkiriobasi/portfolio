@@ -90,7 +90,7 @@ const ProjectCard = ({
                 </div>
                 <div
                     className={`absolute text-white left-5 sm:left-10 top-32 ml-0 
-                        lg:mr-12 lg:top-52 lg:ml-4 mb-0 lg:mb-14`
+                        lg:mr-12 lg:top-44 lg:ml-4 mb-0 lg:mb-14`
                     }
                 >
                     <AnimatedTitle

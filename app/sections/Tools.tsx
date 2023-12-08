@@ -7,7 +7,7 @@ import {
     SiAdobephotoshop, SiExpress, SiFigma, 
     SiFirebase, SiGit, SiGithub, SiGooglechrome, 
     SiGooglefonts, SiJavascript, SiMongodb,
-    SiNextdotjs, SiNodedotjs, SiNpm, SiPostgresql, 
+    SiNextdotjs, SiNodedotjs, SiNpm, 
     SiReact, SiRedux, SiTailwindcss, SiTypescript
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
@@ -61,7 +61,6 @@ const Tools = () => {
                             <AnimatedTools className="grid grid-cols-5 gap-x-4 gap-y-4 sm:gap-y-8" delay={0.3} stepSize={0.1} iconSize={50}>
                                 <SiNodedotjs className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
                                 <SiExpress className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
-                                <SiPostgresql className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
                                 <SiFirebase className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
                                 <SiMongodb className='w-[35px] sm:w-[50px] h-[35px] sm:h-[50px]' />
                             </AnimatedTools>

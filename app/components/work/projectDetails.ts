@@ -64,7 +64,7 @@ export const projects = [
         techNames: ["Payloadcms", "TypeScript", "React", "React-Hook-Form", "Appwrite", "Stripe", "Express", "Prettier", "Eslint"],
         techLinks: ["https://payloadcms.com/", "https://www.typescriptlang.org/", "https://reactjs.org/", "https://react-hook-form.com/", "https://sass-lang.com/", "https://stripe.com/", "https://expressjs.com/", "https://prettier.io/", "https://eslint.org/"],
         github: "https://github.com/Nkiriobasi/e-commerce",
-        demo: "https://snapgram-nkiriobasi.vercel.app/",
+        demo: "https://e-commerce-nkiriobasi.payloadcms.app/",
         image: "/projects/portfolio.webp",
         available: true,
     },
